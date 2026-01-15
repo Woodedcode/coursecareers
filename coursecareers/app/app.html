@@ -1,3 +1,22 @@
 
 visit on VSC on 1/6/26
 revist on VSC on 1/9/26
+
+revisit on 1/14/16
+function Text({ content, strong}) {
+  if (strong) {
+    return <strong>{content}</strong>
+  }
+  return <p>{content}</p>;
+}
+
+
+export default function Home() {
+  return (
+   <div>
+      <Text content="Hello World" strong={true}/>
+      <Text content="my name is" strong={false}/>
+      <Text content="Ryan Woods" strong={true}/>
+  </div>
+  );
+}
