@@ -39,3 +39,25 @@ export default function Home() {
 }
 
 
+1/15/26
+function Text({ content,strong }) {
+if (strong) {
+  return <strong>{content}</strong>
+}
+
+  return <p>{ content }</p>
+}
+
+
+export default function Home() {
+  return <div>
+    <Text content="hello world" strong={true}/>
+    <Text content="my name is" strong={false}/>
+    <Text content="Ryan Woods" strong={true}/>
+    </div>
+}
+
+
+
+
+
