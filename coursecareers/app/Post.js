@@ -26,3 +26,17 @@ export default function Post({ title,author,content,following}) {
     </div>
     );
 }
+
+
+1/16/26
+import "./post.css";
+
+export default function Post({ title,author,content}) {
+    return (
+    <div className="card">
+        <h1>{title}</h1>
+        <h3>By: {author}</h3>
+        <p>{content}</p>
+    </div>
+    );
+}
