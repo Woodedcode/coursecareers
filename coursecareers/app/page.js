@@ -44,3 +44,45 @@ export default function Home() {
     })}
     </div>
 }
+
+
+1/16/26
+"use client";
+import Post from "@/components/Post";
+import { useState } from "react";
+
+export default function Home() {
+  const [content, setContent] = useState("");
+  const [author, setAuthor] = useState("");
+  const [title, setTitle] = useState("");
+  const [posts, setPosts] = useState([]);
+
+  function addPost() {
+    const newPost = {
+      author: author,
+      content: content,
+      title: title,
+      following: false
+    }
+
+    setPosts([...posts,newPost]);
+    setContent("");
+    setAuthor("");
+    setTitle("");
+  }
+
+  return <div>
+    <div>
+    <input type="text" value={title} onChange={setTitle} />
+      <input type="text" value={content} onChange={setContent} />
+      <input type="text" value={author} onChange={setAuthor} />
+      <button onClick={addPost}>Add Post</button>
+    </div>
+    <div className="posts">
+      {posts.map((post,idx) => (
+        <Post {...post} key={idx + Math.random()} />
+      ))}
+    </div>
+  </div>
+}
+
