@@ -63,6 +63,30 @@ RESTART
 
 2/24/26 Components and Props
 
+// function Text({ content,strong }) {
+//   if (strong) {
+//     return <strong>{content}</strong>
+//   }
+
+//   return <p>{content}</p>
+// }
+import Post from "@/components/Post"
+
+
+export default function Home() {
+  return (
+    <div>
+      <Post 
+      title="Ryan is the best" 
+      author="Ryan Woods" 
+      content="He is learning to be great at coding one day"/>
+      <Post 
+      title="Ryan is the best" 
+      author="Ryan Woods" 
+      content="He is learning to be great at coding one day"/>
+    </div>
+  );
+}
 
 
 
