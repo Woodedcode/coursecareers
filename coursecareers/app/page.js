@@ -86,3 +86,53 @@ export default function Home() {
   </div>
 }
 
+
+
+2/25/26
+
+// function Text({ content,strong }) {
+//   if (strong) {
+//     return <strong>{content}</strong>
+//   }
+
+//   return <p>{content}</p>
+// }
+import Post from "@/components/Post"
+
+
+export default function Home() {
+  const posts = [
+    {
+      title: "My Post",
+      author: "Ryan Woods",
+      content: "I am an ok programmer",
+      following:false
+    },
+    {
+      title: "My Post 2",
+      author: "Ryan Woods",
+      content: "I am a decent programmer",
+      following:true
+    },
+    {
+      title: "My Post 3",
+      author: "Ryan Woods",
+      content: "I am a great programmer",
+      following:false
+    },
+    {
+      title: "My Post 4",
+      author: "Ryan Woods",
+      content: "I am a great programmer",
+      following:false
+    },
+  ]
+
+  return (
+    <div>
+      { posts.map((content,idx) => {
+        return <Post {...content} key={idx}/>
+      })}
+    </div>
+  );
+}
