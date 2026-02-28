@@ -95,3 +95,7 @@ export default function Post({ title, author, content}) {
 }
 
 
+
+2/27/26
+
+LEARNED ABOUT TAILWIND CSS
