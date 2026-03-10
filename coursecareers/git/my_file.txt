@@ -21,3 +21,7 @@ Intro to Bash
 3/9/26
 Bash Fundamentals
 
+
+3/9/26
+Bash Editors
+
