@@ -30,5 +30,9 @@ Bash Editors
 Intro to Git
 
 
+3/11/26
+Intro to Deployments
+
 3/9/26
 Fundamentals of Git & Commands
+
