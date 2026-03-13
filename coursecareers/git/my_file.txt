@@ -41,3 +41,8 @@ Intro to Deployments
 
 3/11/26
 Vercel Deployment
+
+
+
+3/12/26
+Vercel Deployment
