@@ -189,23 +189,101 @@
 
 
 
-import time 
+# import time 
 
+# words = ['pneumonoultramicroscopicsilicovolcanoconiosis'] * 100000
+
+# print(words)
+
+# start = time.time()
+
+# final = ""
+
+# for word in words:
+#     final += word
+
+
+# # final = " ".join(words)
+
+# end = time.time()
+
+# print(f"{end-start:.6f}")
+
+
+
+
+
+################################################## # 4/14/26
+# 'a' "a" - Python accepts both
+# print(type('a'))
+
+# def main(name):
+#     print(f"Hello {name}")
+
+# main('Ryan')
+
+# string in python are immutable
+
+
+# name = "Ryan"
+# last = 'Woods'
+
+# print(id(name))
+
+
+# name += " " + last
+
+# print(id(name))
+
+# print(name)
+
+
+# words = ['hello', 'my', 'name', 'is', 'Ryan']
+
+# final = words[0]
+# print(final)
+
+# # for word in words[1:]:
+# #     final += " "
+# #     final += word
+
+# final = " ".join(words)
+
+
+# print(final)
+
+#string input
+#convert to array
+#convert back to a string
+
+# message = "Hello my name is Ryan"
+# print(message)
+# words = message.split()
+# #splits into an array
+# print(words)
+# #converts back to a sentence
+# final = " ".join(words)
+# print(final)
+
+
+# TIMING
+import time
+
+# words = ['pneumonoultramicroscopicsilicovolcanoconiosis'] 
+# print(words)
 words = ['pneumonoultramicroscopicsilicovolcanoconiosis'] * 100000
-
 print(words)
 
 start = time.time()
 
-final = ""
+#do the work
+# final = ""
 
-for word in words:
-    final += word
+# for word in words:
+#     final += word
 
-
-# final = " ".join(words)
+final = " ".join(words)
 
 end = time.time()
 
-print(f"{end-start:.6f}")
-
+print(f"{end - start:.6f}")
