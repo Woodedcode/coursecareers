@@ -267,18 +267,104 @@
 # print(data)
 
 # COPYING
-data = [1,2,3] 
+# data = [1,2,3] 
 
 
-data1 = [1,2,3]
-# data2 = data1 [:]
+# data1 = [1,2,3]
+# # data2 = data1 [:]
 
 
-data2[2] = 100
-print(data1)
+# data2[2] = 100
+# print(data1)
 
 
 
+
+
+
+######################################### 4/22/26
+# Data types - small individual atomix things - numbers,string,booleans -> arrays can be built with these small data types
+
+
+# look up subscripting
+# look up dynamic array
+
+# data = ["data", 5, True, [5,3,1]]
+
+# layer of indirection
+# behind the scenes  - Array will store pointers to the data
+# the pointers are contiguous 
+
+
+# random access - in constant time 0(1)
+# contiguous
+# consistently sized
+
+# print(data[2])
+
+# starting memory location + (size of each element * index being used)
+
+
+# data = [1,2,3,4,5]
+# data.extend([6,7,8,9,10]) # in-place
+# print(data)
+
+# data = [1,2,3,4,5]
+# data += [6,7,8,9,10]
+# print(data)
+
+# data1 = [54,23,656,12,87]
+# data2 = sorted(data1)
+# print(data1, data2)
+
+# data = [54,23,656,12,87]
+# data.sort()
+# print(data)
+
+
+
+# data1 = [1,2,3]
+# data2 = data1
+
+# data2[0] = 100
+# print(data1)
+
+# data1 = [1,2,3]
+# data2 = data1[:] use different values for slice if needed
+
+# data2[0] = 100
+# print(data1)
+
+# OR
+
+
+# data1 = [1,2,3]
+# data2 = data1.copy()
+
+# data2[0] = 100
+# print(data1)
+
+
+# data = ["hello", "my", "name", "is", 'Ryan']
+
+
+# for i in range(len(data)):
+#     print(i, data[i])
+
+
+# for d in data:
+#     print(d)
+
+# for i, d in enumerate(reversed(data)):
+#     print(i,d)
+
+
+# data = ["hello", "my", "name", "is", 'Ryan']
+
+
+# final = [str.upper(word) for word in reversed(data)]
+
+# print(final)
 
 
 
