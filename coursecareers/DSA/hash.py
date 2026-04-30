@@ -7,6 +7,7 @@
 
 
 
+
 ########################## HASH TABLE
 # from collections import defaultdict
 poem = """
